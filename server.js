@@ -23,7 +23,7 @@ app.use(cors());
 app.get('/api/restaurants', (req, res) => {
     const { lat, lng } = req.query;
     console.log(req.query);
-    const url = `https://www.swiggy.com/dapi/restaurants/list/v5?lat=${lat}&lng=${lng}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`;
+    const url = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.4491088&lng=78.3565045&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
   
     fetch(url, {
       headers: {
